@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portfolio</title>
+    <link rel="icon" href="aboutme1.jpg" class="rounded-circle">
+    <style>
+      .bgc
+      {
+        background-image: url(bgimg4.jpg);
+        height: 100vh;
+        max-width: 100%; background-size: cover;
+        background-position: center;
+      }
+      #b:hover
+      {
+       text-decoration: none;
+        color: #fff;
+      }
+      .a
+      {
+        color: green;
+      }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm fixed-top" style="background-color: rgb(255, 255, 255,0.1);color: #000000;">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-5" href="#"><b>PORTFOLIO</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end mx-5" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html#skl" >SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html#Works">MY WORKS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html#contact" >CONTACT</a>
+          </li>    
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- first page -->
+        <div class="container-fluid bgc d-flex justify-content-center align-items-center min-vh-50">
+            <div class="row rounded-5 p-5 shadow box" style=" background-color: rgb(255, 255, 255,0.1)">
+                
+                <div class="col"><!-- image -->
+                    <img src="portimg1.jpg" class="img-fluid rounded-circle mt-5 mx-5 d-flex justify-content-center" alt="portImg1" style="width: 250px;border: 8px solid #a0a0a0; ;">
+                </div>
+
+                <div class="col"><!-- box contents -->
+                    <h5 class=" h5 text-center justify-content-center mt-3 ">Hello, I'm</h5>
+                    <h4 class=" h4 text-center justify-content-center mt-3"><b>ADHWANTH D</b></h4>
+                    <h4 class="h4 justify-content-center text-center mb-3 text-dark">______________________ </h3>
+                    <h3 class="h3 fw-bold mb-3 justify-content-center text-center" id="change">FULL STACK DEVELOPER</h4>
+                    <button type="button" class="btn d-flex btn-outline-success text-center mb-4 " style="margin: auto;"><a href="index2.html" id="b" class="a" style="text-decoration: none;">About Me</button></a> <!-- About me button-->  
+                    
+                    <div class="row mt-5"><!-- icons-->
+                      <div class="col justify-content-center d-flex">
+                        <a href="https://www.linkedin.com/in/adhwanth-d-5937791ba/"><i class="fa-brands fa-linkedin-in"  style="color: rgb(29, 127, 255);font-size: 22px;"></i></a>
+                      </div>
+
+                      <div class="col justify-content-center d-flex">
+                        <a href="https://github.com/ADHWANTH"><i class="fa-brands fa-github "  style="color: black;font-size: 22px;"></i></a>
+                      </div>
+
+                      <div class="col justify-content-center d-flex">
+                        <a href="tel:7904413430"><i class="fa-solid fa-phone"style="color: green;font-size: 22px;"></i></a>
+                      </div>
+
+                      <div class="col justify-content-center d-flex">
+                        <a href="mailto:adhwanth17@gmail.com"><i class="fa-regular fa-envelope" style="color: rgb(252, 11, 11);font-size: 22px;"></i></a>
+                      </div>
+                    </div>                                                                                                                             
+                </div> 
+            </div>
+        </div>
+    <!-- /first page -->
+
+    <script>
+      let change=document.getElementById("change");
+      let name=["FRONT-END DEVELOPER","BACK-END DEVELOPER","FULL STACK DEVELOPER"];
+      let i=0;
+      function adhwanth()
+      {
+        change.textContent=name[i];
+        i=i+1;
+        if(i==name.length)
+        {
+          i=0;
+        }
+      }
+      setInterval(adhwanth,3000);
+    </script>
+</body>
+</html>
